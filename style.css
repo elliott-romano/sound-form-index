@@ -60,6 +60,11 @@ body{
   display: flex;
 }
 
+.nav-item p{
+  font-size: 8;
+  color: black;
+}
+
 .nav-item{
   flex-direction: row;
   align-items: flex-start;
