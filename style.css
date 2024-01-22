@@ -1,0 +1,150 @@
+*{
+    font-family: "neue-haas-grotesk-text", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+  }
+
+body{
+  width: 100%;
+  filter: contrast(100%) brightness(250%);
+  background: 
+	linear-gradient(48deg, rgb(1, 158, 249), rgba(0, 255, 166, 0.3)),
+	url("data:image/svg+xml,%3Csvg viewBox='0 0 341 341' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;   /* width of the container */
+    margin: 0 auto;   /* centers container */
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .flex-row.header {
+    font-weight: bold;
+    padding: 5px 0;
+  }
+  
+  .flex-item {
+    margin-right: 20px; /* Adjust the space between columns */
+    margin-bottom: 10px; /* Space between rows */
+  }
+  
+  .date { width: 50px; } /* Adjust the width as needed */
+  .title { width: 300px; } /* Adjust the width as needed */
+  .description { 
+    /* flex-grow: 1; This allows the description to fill the remaining space */
+    /* flex-basis: 0; Reset the starting width */
+    /* word-wrap: break-word; Allows the text to wrap within the container */
+    width:100%;
+  }
+
+
+  @keyframes moveBanner {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.nav{
+  display: flex;
+}
+
+.nav-item{
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.about{
+  width: 70%;
+  padding: 50px;
+  margin: 0 auto;   /* centers container */
+}
+
+
+  h1{
+    font-size: 44px;
+    text-transform: uppercase;
+    animation: moveBanner 10s linear infinite;
+  }
+
+
+
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;   /* width of the container */
+  margin: 0 auto;   /* centers container */
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Align items to the top */
+  /* margin-bottom: 10px; */
+}
+
+.item-container:hover {
+  /* background-color: #f1f1f1; */
+  filter: blur(1px);      /* Blur with 8px radius */
+  width: 100%;
+  /* filter: contrast(100%) brightness(250%);
+  background-image: 
+	linear-gradient(48deg, rgb(21, 0, 250), rgba(239, 0, 151, 0.3)),
+	url("data:image/svg+xml,%3Csvg viewBox='0 0 341 341' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.3' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); */
+
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><ellipse cx="20" cy="20" rx="20" ry="20" fill="white"/></svg>'), auto;
+}
+
+.item-year {
+  font-size: 18px;
+  width: 60px;
+  margin-right: 20px; /* Adjust the space between columns */
+  /* margin-bottom: 10px; */
+}
+
+.item-name {
+  font-size: 18px;
+  width: 300px;
+  margin-right: 20px; /* Adjust the space between columns */
+  /* margin-bottom: 10px; */
+}
+
+.item-category {
+  font-size: 18px;
+  width: 150px;
+  margin-right: 20px; /* Adjust the space between columns */
+  /* margin-bottom: 10px; */
+}
+
+.item-description {
+  font-size: 18px;
+  margin-right: 20px; /* Adjust the space between columns */
+  /* margin-bottom: 10px; */
+  width: 100%;
+}
+
+.item-link {
+  text-align: center;
+  margin: auto;
+  width: 30px;
+}
+
+.custom-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><ellipse cx="20" cy="20" rx="20" ry="20" fill="white"/></svg>'), auto;
+}
+
+canvas {
+  display: block;
+}
