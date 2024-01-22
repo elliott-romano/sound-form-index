@@ -29,7 +29,6 @@ body{
   
   .flex-row.header {
     font-weight: bold;
-    padding: 5px 0;
   }
   
   .flex-item {
@@ -57,12 +56,14 @@ body{
 }
 
 .nav{
+  width: 95%;
   display: flex;
 }
 
 .nav-item{
   flex-direction: row;
   align-items: flex-start;
+  width: 50%;
 }
 
 .about{
@@ -77,9 +78,6 @@ body{
     text-transform: uppercase;
     animation: moveBanner 10s linear infinite;
   }
-
-
-
 
 #content-container {
   display: flex;
@@ -108,28 +106,24 @@ body{
 }
 
 .item-year {
-  font-size: 18px;
   width: 60px;
   margin-right: 20px; /* Adjust the space between columns */
   /* margin-bottom: 10px; */
 }
 
 .item-name {
-  font-size: 18px;
   width: 300px;
   margin-right: 20px; /* Adjust the space between columns */
   /* margin-bottom: 10px; */
 }
 
 .item-category {
-  font-size: 18px;
   width: 150px;
   margin-right: 20px; /* Adjust the space between columns */
   /* margin-bottom: 10px; */
 }
 
 .item-description {
-  font-size: 18px;
   margin-right: 20px; /* Adjust the space between columns */
   /* margin-bottom: 10px; */
   width: 100%;
